@@ -1,0 +1,32 @@
+{
+  "name": "trillo-travel-app",
+  "version": "1.0.0",
+  "description": "Book and travell",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daswer123/course__Trillo.git"
+  },
+  "keywords": [
+    "pet",
+    "project",
+    "advanced-css",
+    "flexboxes"
+  ],
+  "author": "Danil Boldyrev @daswer123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daswer123/course__Trillo/issues"
+  },
+  "homepage": "https://github.com/daswer123/course__Trillo#readme",
+  "dependencies": {
+    "parcel": "^2.2.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1"
+  }
+}

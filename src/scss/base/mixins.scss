@@ -1,0 +1,30 @@
+// MEDIA
+// 0 - 600px : Phone
+// 600 - 900px : Tablet portait
+// 900 - 1200px : Tablet landscape
+// 1200 - 1800px : Desktop
+
+@mixin absPos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respondMax($breakpoint) {
+  @media only screen and (max-width: calc($breakpoint/16px * 1em)) {
+    @content;
+  }
+}
+
+@mixin respondMin($breakpoint) {
+  @media screen and(min-width: calc($breakpoint/16px * 1em)) {
+    @content;
+  }
+}
+
+@mixin respondBetween($breakpoint, $nextBreakpoint) {
+  @media screen and (min-width: calc($breakpoint/16px * 1em)) and (max-width: calc($breakpoint/16px * 1em)) {
+    @content;
+  }
+}
