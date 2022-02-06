@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="user-info__item user-info__profile">
-              <a href="" class="user-info__profile-link"
+              <a href="#" class="user-info__profile-link"
                 ><img
                   src="./img/avatar1.jpg"
                   class="user-info__profile-avatar"
@@ -67,12 +67,15 @@
           </ul>
         </nav>
       </header>
-      <main class="content">
+      <div class="content">
         <aside class="nav-sidebar sidebar">
           <nav class="sidebar__nav">
             <ul class="sidebar__nav-list">
               <li class="sidebar__nav-item">
-                <a href="#hotels" class="sidebar__nav-link">
+                <a
+                  href="#hotels"
+                  class="sidebar__nav-link sidebar__nav-link--active"
+                >
                   <svg class="sidebar__nav-icon">
                     <use xlink:href="img/sprite.svg#icon-home"></use>
                   </svg>
@@ -108,11 +111,171 @@
             </ul>
           </nav>
           <p class="sidebar__copyright">
-            2021 Made with love for you ^_^&copy;
+            2022 Made with love for you ^_^&copy;
           </p>
         </aside>
-        <section class="hotel-overview">overview</section>
-      </main>
+        <main class="hotel">
+          <section class="hotel__gallery gallery">
+            <figure class="gallery__container">
+              <img
+                class="gallery__photo"
+                srcset="./img/hotel-1.jpg 900w, ./img/hotel-1-small.jpg 600w"
+                sizes="(max-width:600px) 36vw, (max-width:900px) 30vw"
+                alt="how hotel looks"
+              />
+            </figure>
+            <figure class="gallery__container">
+              <img
+                class="gallery__photo"
+                srcset="./img/hotel-2.jpg 1000w, ./img/hotel-2-small.jpg 750w"
+                sizes="(max-width:600px) 36vw, (max-width:900px) 30vw"
+                alt="how hotel looks"
+              />
+            </figure>
+            <figure class="gallery__container">
+              <img
+                class="gallery__photo"
+                srcset="./img/hotel-3.jpg 1000w, ./img/hotel-3-small.jpg 750w"
+                sizes="(max-width:600px) 36vw, (max-width:900px) 30vw"
+                alt="how hotel looks"
+              />
+            </figure>
+          </section>
+          <section class="hotel__overview overview">
+            <h1 class="overview__title secondary-heading">Hotel Las Palamas</h1>
+            <div class="overview__stars">
+              <svg class="overview__star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <a href="#" class="overview__location"
+              ><svg class="overview__location-icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <span class="beat">Alufeira, Portugal</span>
+            </a>
+            <p class="overview__rating">
+              <span class="overview__rate">8.6</span>
+              <span class="overview__votes">429 votes</span>
+            </p>
+          </section>
+          <section class="hotel__info">
+            <section class="hotel__info-desc description">
+              <div class="description__about ordinary-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Animi nisi dignissimos debitis ratione sapiente saepe.
+                  Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                  architecto voluptate.
+                </p>
+                <p>
+                  Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                  architecto voluptate delectus, inventore iure aliquid aliquam.
+                </p>
+              </div>
+              <ul class="description__features ordinary-text">
+                <li class="description__feature">Close to the beach</li>
+                <li class="description__feature">Breakfast included</li>
+                <li class="description__feature">Free airport shuttle</li>
+                <li class="description__feature">Free wifi in all rooms</li>
+                <li class="description__feature">
+                  Air conditioning and heating
+                </li>
+                <li class="description__feature">Pets allowed</li>
+                <li class="description__feature">We speak all languages</li>
+                <li class="description__feature">Perfect for families</li>
+              </ul>
+              <div class="description__recomends recomends">
+                <p class="recomends__who under-text">
+                  Lucy and 3 other friends recommends this hotel
+                </p>
+                <div class="recomends__friend-photos">
+                  <img
+                    src="./img/avatar1.jpg"
+                    alt="your friend"
+                    class="recomends__friend-photo"
+                  />
+                  <img
+                    src="./img/avatar2.jpg"
+                    alt="your friend"
+                    class="recomends__friend-photo"
+                  />
+                  <img
+                    src="./img/avatar3.jpg"
+                    alt="your friend"
+                    class="recomends__friend-photo"
+                  />
+                  <img
+                    src="./img/avatar4.jpg"
+                    alt="your friend"
+                    class="recomends__friend-photo"
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="hotel__info-reviews reviews">
+              <section class="review">
+                <p class="ordinary-text review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </p>
+                <div class="review__info">
+                  <img
+                    src="./img/avatar6.jpg"
+                    alt="reviewer"
+                    class="review__photo"
+                  />
+                  <p class="review__who">
+                    <span class="review__user">Nick Smith</span>
+                    <span class="review__date">Feb 23rd, 2021</span>
+                  </p>
+                  <strong class="review_rate">7.8</strong>
+                </div>
+              </section>
+              <section class="review">
+                <p class="ordinary-text review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia
+                  ex.itaque officia ex. it. Fuga
+                </p>
+                <div class="review__info">
+                  <img
+                    src="./img/avatar7.jpg"
+                    alt="reviewer"
+                    class="review__photo"
+                  />
+                  <p class="review__who">
+                    <span class="review__user">Nick Smith</span>
+                    <span class="review__date">Aug 13rd, 2022</span>
+                  </p>
+                  <strong class="review_rate">9.3</strong>
+                </div>
+              </section>
+              <a href="#" class="reviews__button">Check all reviews →</a>
+            </section>
+          </section>
+          <div class="hotel__book">
+            <h2 class="hotel__book-title secondary-heading">
+              GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+            </h2>
+            <button type="button" class="btn hotel__book-btn beat">
+              <span>Book Now</span>
+            </button>
+          </div>
+        </main>
+      </div>
     </div>
   </body>
 </html>

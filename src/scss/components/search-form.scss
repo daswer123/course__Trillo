@@ -3,6 +3,14 @@
   flex: 1 0 30%;
   font-size: 1.6rem;
 
+  @include respondMax($small-phone) {
+    order: 10;
+    flex-basis: 100%;
+
+    background-color: var(--white-darker);
+    margin-bottom: 2rem;
+  }
+
   justify-content: center;
   &__input {
     position: relative;
@@ -23,6 +31,16 @@
     &:focus {
       transition: all 0.3s;
       width: 55%;
+    }
+
+    @include respondMax($small-phone) {
+      width: 90%;
+      border-radius: 0;
+
+      &:focus {
+        transition: all 0.3s;
+        width: 95%;
+      }
     }
   }
 

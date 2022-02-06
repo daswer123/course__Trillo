@@ -1,0 +1,94 @@
+.overview {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid var(--white);
+
+  &__title {
+    padding: 1.5rem 3rem;
+
+    @include respondMax($small-phone) {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+  &__star {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--pink);
+
+    @include respondMax($small-phone) {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  &__location {
+    margin-right: 2.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+    color: var(--pink);
+
+    text-decoration: none;
+
+    @include respondMax($small-phone) {
+      font-size: 1rem;
+      margin-right: 2rem;
+    }
+
+    & span {
+      padding-bottom: 3px;
+      border-bottom: 1px solid currentColor;
+    }
+
+    &:hover span {
+      transition: all 0.3s;
+      color: black;
+    }
+
+    &:focus span {
+      outline: none;
+      animation: beat ease-in 1s infinite;
+    }
+  }
+
+  &__location-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+    fill: currentColor;
+
+    margin-right: 0.5rem;
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+
+    align-self: stretch;
+    background-color: var(--pink);
+    color: var(--white);
+
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    @include respondMax($small-phone) {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  &__rate {
+    font-size: 2rem;
+  }
+
+  &__votes {
+    font-size: 0.9rem;
+  }
+}

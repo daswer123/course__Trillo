@@ -1,0 +1,23 @@
+@keyframes beat {
+  0% {
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  100% {
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.beat {
+  &:focus {
+    outline: none;
+    animation: beat ease-in 1s infinite;
+  }
+}

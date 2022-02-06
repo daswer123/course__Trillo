@@ -1,10 +1,109 @@
 .content {
   display: flex;
   background-color: white;
+
+  @include respondMax($tablet-port) {
+    flex-direction: column;
+  }
 }
 
-.hotel-overview {
+.hotel {
   flex: 1;
-
   min-height: 60rem;
+
+  &__info {
+    // padding-top: 1rem;
+    background-color: var(--white-darker);
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 3rem;
+    border-bottom: 1px solid var(--white);
+
+    @include respondMax($tablet-port) {
+      padding: 1.5rem;
+    }
+    @include respondMax($phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__info-desc {
+    margin-right: 3rem;
+
+    @include respondMax($phone) {
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__info-reviews {
+    flex: 1;
+  }
+
+  &__book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 3rem;
+  }
+
+  &__book-title {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    @include respondMax($small-phone) {
+      text-align: center;
+    }
+  }
+
+  &__book-btn {
+    cursor: pointer;
+    border: 0;
+    padding: 2rem 10rem;
+    position: relative;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    color: white;
+
+    background-image: linear-gradient(
+      to right,
+      var(--pink-light),
+      var(--pink-dark)
+    );
+
+    border-radius: 100px;
+
+    margin-bottom: 4rem;
+
+    &::before {
+      content: "4 rooms left";
+      @include absPos;
+
+      top: 0;
+      opacity: 0;
+    }
+
+    &:hover span {
+      opacity: 0;
+    }
+
+    &:hover::before {
+      transition: all 0.3s;
+      opacity: 1;
+      top: 50%;
+    }
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        var(--pink-dark),
+        var(--pink-light)
+      );
+    }
+  }
 }

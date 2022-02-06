@@ -1,13 +1,24 @@
 *,
 *::after,
 *::before {
-  //   padding: 0;
-  //   margin: 0;
+  padding: 0;
+  margin: 0;
   box-sizing: inherit;
 }
 
 html {
   font-size: baseFontSize(10px);
+
+  @include respondMax($tablet-port) {
+    font-size: baseFontSize(9px);
+  }
+
+  @include respondMax($phone) {
+    font-size: baseFontSize(8px);
+  }
+  @include respondMax($small-phone) {
+    font-size: baseFontSize(7px);
+  }
 }
 
 body {

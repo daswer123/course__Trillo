@@ -6,4 +6,8 @@
   box-shadow: var(--box-shadow);
 
   min-height: 50rem;
+
+  @include respondMax($tablet-land) {
+    margin: 0;
+  }
 }

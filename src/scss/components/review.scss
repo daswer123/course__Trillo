@@ -1,0 +1,78 @@
+.review {
+  background-color: white;
+  position: relative;
+
+  margin-bottom: 3rem;
+
+  padding: 3rem 2rem;
+
+  box-shadow: 0 0 2rem rgba(black, 0.2);
+  &_rate {
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: var(--pink);
+  }
+
+  &__text {
+  }
+
+  &__info {
+    margin-top: 2rem;
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__photo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  &__who {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: auto;
+    margin-left: 1.5rem;
+  }
+
+  &__user {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    padding-top: 0.5rem;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0px;
+    // top: -20px;
+    line-height: 0.3;
+
+    content: "\201C";
+    font-size: 15rem;
+
+    opacity: 0.1;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.reviews__button {
+  color: var(--pink);
+  font-size: 1.2rem;
+
+  &:hover {
+    transition: all 0.3s;
+    color: black;
+  }
+}

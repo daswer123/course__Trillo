@@ -6,3 +6,24 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
+.secondary-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--grey-light);
+
+  font-weight: 400;
+
+  @include respondMax($small-phone) {
+    font-size: 1.7rem;
+  }
+}
+
+.ordinary-text {
+  font-size: 1.4rem;
+}
+
+.under-text {
+  font-size: 1.1rem;
+  color: var(--grey-light);
+}
