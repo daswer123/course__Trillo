@@ -1,0 +1,103 @@
+.header {
+  min-height: 7rem;
+  background-color: white;
+  border-bottom: 1px solid var(--white-darker);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    margin-left: 2rem;
+
+    & img {
+      height: 3.5rem;
+    }
+  }
+}
+
+.user-info {
+  &__list {
+    list-style: none;
+    display: flex;
+
+    margin: 0;
+  }
+
+  &__item {
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      transition: all 0.4s;
+      background-color: var(--white);
+    }
+  }
+
+  &__bookmarks {
+  }
+
+  &__icon {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--grey);
+  }
+
+  &__bookmark {
+  }
+
+  &__messages {
+  }
+
+  &__chat {
+  }
+
+  &__profile {
+    padding-right: 3rem;
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__profile-link {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__profile-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__username {
+    margin-left: 1rem;
+    align-self: center;
+
+    color: var(--grey);
+    font-size: 1.6rem;
+  }
+
+  &__link {
+    position: relative;
+  }
+}
+
+.notification {
+  position: absolute;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border-radius: 50%;
+  text-align: center;
+  color: var(--white);
+
+  background-color: var(--pink);
+
+  top: -5px;
+  right: -2px;
+}

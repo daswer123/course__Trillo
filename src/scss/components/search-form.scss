@@ -1,0 +1,44 @@
+.search-form {
+  display: flex;
+  flex: 1 0 30%;
+  font-size: 1.6rem;
+
+  justify-content: center;
+  &__input {
+    position: relative;
+    width: 50%;
+    border: 0;
+    background-color: var(--white-darker);
+
+    transition: all 0.3s;
+    outline: none;
+    border-radius: 5rem;
+
+    padding: 1rem 2rem;
+
+    &::placeholder {
+      color: var(--white-grey);
+    }
+
+    &:focus {
+      transition: all 0.3s;
+      width: 55%;
+    }
+  }
+
+  &__btn {
+    border: 0;
+    cursor: pointer;
+    background-color: inherit;
+
+    margin-left: -4rem;
+    z-index: 1;
+
+    & svg {
+      width: 2rem;
+      height: 2rem;
+
+      fill: var(--grey);
+    }
+  }
+}
